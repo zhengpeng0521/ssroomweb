@@ -1,0 +1,69 @@
+.clearfix:after{
+    content : "";
+    display: block;
+    clear: both;
+}
+.ellipsis{
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.shopListContainer {
+    height: calc(~"100% - 42px");
+    overflow: auto;
+    min-width: 1060px;
+}
+.shopItem {
+    width: calc(~"25% - 30px");
+    height : 200px;
+    border:1px solid #ccc;
+    float: left;
+    margin-right: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    .shopLogo {
+        //float: left;
+        //width: 230px;
+        //height: 190px;
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-color: #eee;
+    }
+}
+.shopDetail {
+    width:calc(~"100% - 120px");
+    float: left;
+    padding: 0 0 0 10px;
+    .shopTitle {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.city {
+    margin-right: 10px;
+}
+.contentLineOne {
+    display: flex;
+    justify-content: left;
+}
+.address {
+    height: 40px;
+    overflow: hidden;
+    white-space: wrap;
+    display: -webkit-box;
+    line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.copyBtn {
+    float: right;
+    margin: 0 10px 10px 0;
+}
+.updateCheck{
+    margin: 4px 0 0 10px;
+}
